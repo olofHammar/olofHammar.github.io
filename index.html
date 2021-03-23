@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- meta name viewport & content gör så att sidan ser bra ut på alla enheter  -->
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Olof Hammar Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <!-- Navbar Section-->
+        <nav class="navbar">
+            <!-- nav definierar ett set av navigationslänkar-->
+            <div class="navbar_container">
+                <a href="https://github.com/olofHammar" target="blank" id="navbar_logo">OLOF HAMMAR</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#chefnotes" class="navbar_links" id="chefnotes-page">Chefnotes</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#tictactoe" class="navbar_links" id="tictactoe-page">Tic Tac Toe</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#neighbour" class="navbar_links" id="neighbour-page">Neighbours</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#flagquiz" class="navbar_links" id="flagquiz-page">Flagquiz</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Chefnotes Section-->
+        <div class="main" id="chefnotes">
+            <div class="main_container">
+                <!-- Image Slider-->
+                <div class="slidercontainer">  
+                    <div class="showSlide">  
+                        <img src="chefnotes_one.png" id="app_image" />  
+                    </div>  
+                    <div class="showSlide">  
+                        <img src="chefnotes_two.png" id="app_image"/>  
+                    </div>  
+                    <div class="showSlide">  
+                        <img src="chefnotes_three.png" id="app_image"/>  
+                    </div>  
+                    <div class="showSlide">  
+                        <img src="chefnotes_four.png" id="app_image"/>  
+                    </div> 
+                    <div class="showSlide">  
+                        <img src="chefnotes_five.png" id="app_image"/>  
+                    </div>  
+                    <!-- Navigation arrows -->  
+                    <a class="left" onclick="nextSlide(-1)">❮</a>  
+                    <a class="right" onclick="nextSlide(1)">❯</a>  
+                </div> 
+                <div class="main_content" id="chefnotestitle">
+                    <h2>CHEFNOTES</h2>
+                    <p><span style="font-weight:bold">Om appen:</span> Chefnotes är din personliga kokbok i telefonen. Du kan skapa recept genom appens mallar eller genom att scanna ett recept från en bild. Alla recept du skapar sparas i din personliga bok. <br>
+                    Du kan även bläddra och inspireras av andra användares recept. Dessa recept kan du spara som favoriter i din egna bok så att du enkelt kommer åt dom senare.<br><br>
+                    <span style="font-weight:bold">Språk:</span> SwiftUI<br>
+                    <span style="font-weight:bold">Databas:</span> Firebase<br> </p>
+                    <button class="main_btn"><a href="https://github.com/olofHammar/Chefnotes" target="_blank">Gå till projektet</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- Tic tac toe Section-->
+        <div class="main" id="tictactoe">
+            <div class="main_container">
+                <div class="main_content">
+                    <h2>TIC TAC TOE</h2>
+                    <p><span style="font-weight:bold">Om appen:</span> Ett tre i rad-spel som du kan spela med en kompis eller med appens inbyggda AI-spelare. <br> 
+                        Spelet håller koll på varje spelares namn och vinststatistik.<br><br>
+                        <span style="font-weight:bold">Språk:</span> UIKit<br>
+                     </p>
+                    <button class="main_btn"><a href="https://github.com/olofHammar/Tre-i-rad" target="_blank">Gå till projektet</a></button>
+                </div>
+                        <div class="slidercontainer-two">  
+                            <div class="showSlide-two">  
+                                <img src="tictac_one.png" id="app_image" />  
+                            </div>  
+                            <div class="showSlide-two">  
+                                <img src="tictac_two.png" id="app_image"/>  
+                            </div>  
+                            <div class="showSlide-two">  
+                                <img src="tictac_three.png" id="app_image"/>  
+                            </div>   
+                            <!-- Navigation arrows -->  
+                            <a class="left-tic" onclick="nextSlideTic(-1)">❮</a>  
+                            <a class="right-tic" onclick="nextSlideTic(1)">❯</a>  
+                        </div> 
+            </div>
+        </div>
+        <!-- Neighbours Section-->
+        <div class="main" id="neighbour">
+            <div class="main_container">
+                    <img src="/neighboursnew.png" id="app_image" alt="Screenshot">
+                <div class="main_content">
+                    <h2>NEIGHBOURS</h2>
+                    <p><span style="font-weight:bold">Om appen:</span> Neighbours är en chat-app som vill uppmuntra grannsämja. Med Neighbours kan du chatta med personer i din närhet (1-10 kilometer) och även se om någon av dessa personer behöver hjälp med någonting. <br><br>
+                        <span style="font-weight:bold">Språk:</span> Kotlin<br>
+                        <span style="font-weight:bold">Databas:</span> Firebase<br> </p>
+                    <button class="main_btn"><a href="https://github.com/olofHammar/NeighboursChat" target="_blank">Gå till projektet</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- Flagquiz Section-->
+        <div class="main" id="flagquiz">
+            <div class="main_container">
+                <div class="main_content">
+                    <h2>FLAGQUIZ</h2>
+                    <p><span style="font-weight:bold">Om appen:</span>  I denna app testas dina flaggkunskper. <br>
+                    Genom att svara på tio, tjugo eller trettio frågor så utmanas du att försöka ta dig in på topplistan.<br><br>
+                        <span style="font-weight:bold">Språk:</span> Kotlin<br>
+                        <span style="font-weight:bold">Databas:</span> SQL<br> </p>
+                    <button class="main_btn"><a href="https://github.com/olofHammar/QuizApp1" target="_blank">Gå till projektet</a></button>
+                </div>
+                    <img src="/newquizscreen.png" id="app_image" alt="Screenshot">
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
